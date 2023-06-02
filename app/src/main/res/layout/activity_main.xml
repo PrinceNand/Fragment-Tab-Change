@@ -15,15 +15,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tab_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/black"-->
+<!--            app:tabIndicatorColor="@color/white"-->
+<!--            app:tabSelectedTextColor="@color/white"-->
+<!--            app:tabTextColor="#D6D6D6">-->
+
+<!--        </com.google.android.material.tabs.TabLayout>-->
+
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/black"
-            app:tabIndicatorColor="@color/white"
+            app:tabTextColor="@color/colorPrimary"
             app:tabSelectedTextColor="@color/white"
-            app:tabTextColor="#D6D6D6">
-
+            app:tabBackground="@drawable/tab_color_selector"
+            android:background="@color/dull_white">
         </com.google.android.material.tabs.TabLayout>
 
         <androidx.viewpager2.widget.ViewPager2
